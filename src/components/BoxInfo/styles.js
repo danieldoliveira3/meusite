@@ -54,7 +54,7 @@ export const BodyBoxInfo = styled.div`
 
   @media (min-width: 320px) and (max-width: 480px) {
     margin-right: 0;
-    padding-left: 0;
+    padding-left: 30px;
 
     max-height: 500px;
 
