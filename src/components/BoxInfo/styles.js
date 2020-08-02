@@ -22,8 +22,6 @@ export const TitleBoxInfo = styled.div`
   z-index: 10000;
 `;
 
-export default TitleBoxInfo;
-
 export const BodyBoxInfo = styled.div`
   position: relative;
 
@@ -35,14 +33,14 @@ export const BodyBoxInfo = styled.div`
   align-items: center;
 
   max-width: 660px;
-  width: calc(100% + var(--gap));
-  max-height: 400px;
 
+  max-height: 400px;
+  /* nem lembro mais qual problema to tentando resolver */
   padding: 30px;
   padding-left: 60px;
   padding-top: 30px;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
 
   overflow: auto;
@@ -63,3 +61,4 @@ export const BodyBoxInfo = styled.div`
 `;
 
 //não consigo fazer o titulo aparecer
+export default TitleBoxInfo;

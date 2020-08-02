@@ -11,4 +11,9 @@ export const Wrap = styled.div`
   align-items: center;
 
   background: ${(props) => `url(${props.bg})`};
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;
