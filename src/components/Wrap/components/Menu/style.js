@@ -18,7 +18,7 @@ export const Menu = styled.div`
 
 export const MenuPreto = styled.div`
   width: 50%;
-  height: calc((1vh * 100) - 30px);
+  height: calc((1vh * 100) - 35px);
 
   vertical-align: middle;
   display: flex;
@@ -33,7 +33,7 @@ export const MenuPreto = styled.div`
 
 export const MenuTransparent = styled.div`
   width: 50%;
-  height: calc((1vh * 100) - 30px);
+  height: calc((1vh * 100) - 35px);
 
   position: fixed;
   top: 0;
