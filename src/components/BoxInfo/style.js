@@ -6,8 +6,10 @@ export const wrapBoxInfo = styled.div`
   z-index: 0;
   margin-right: 30px;
 
+  display: flex;
+
   @media (min-width: 320px) and (max-width: 480px) {
-    margin-right: 0;
+    margin: 0 auto;
     margin-top: 20px;
 
     &:last-child {
@@ -67,12 +69,16 @@ export const BodyBoxInfo = styled.div`
 */
 
   @media (min-width: 320px) and (max-width: 480px) {
-    margin-right: 0;
-    padding-left: 30px;
-
+    margin: 0 auto;
+    padding: 0;
     max-height: 500px;
     width: 100%;
     justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 0;
+    }
   }
 `;
 
