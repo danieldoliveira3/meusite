@@ -45,10 +45,18 @@ class Menu extends Component {
                   <s.MenuText>MEUS PROJETOS</s.MenuText>
                 </ul>
                 <rede.RedesSociais>
-                  <a href="/" target="_blank">
+                  <a
+                    href="https://github.com/danieldoliveira3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i as="a" className="fab fa-github"></i>
                   </a>
-                  <a href="/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/_danieldoliveira/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i as="a" className="fab fa-instagram"></i>
                   </a>
                 </rede.RedesSociais>

@@ -10,7 +10,7 @@ export default function App() {
   const ar = ["PROPES", "COGNITA", "BANANA"];
   return (
     <Wrap>
-      <s.wrapPerfil>
+      <s.wrapPerfil id="home">
         <s.fotoPerfil fotoPerfil={fotoPerfil}></s.fotoPerfil>
 
         <s.Box height="auto;">
@@ -21,15 +21,23 @@ export default function App() {
         </s.Box>
 
         <s.RedesSociais>
-          <a href="/" target="_blank">
+          <a
+            href="https://github.com/danieldoliveira3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i as="a" className="fab fa-github"></i>
           </a>
-          <a href="/" target="_blank">
+          <a
+            href="https://www.instagram.com/_danieldoliveira/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i as="a" className="fab fa-instagram"></i>
           </a>
         </s.RedesSociais>
       </s.wrapPerfil>
-      <BoxInfo maxWidth="660px" title="MEUS PROJETOS">
+      <BoxInfo id="projects" maxWidth="660px" title="MEUS PROJETOS">
         {ar.map((i) => {
           return (
             <ItemBoxInfo
