@@ -18,8 +18,9 @@ export const Menu = styled.div`
 
 export const MenuPreto = styled.div`
   width: 50%;
-  height: calc(100vh - 10vh);
+  height: 100vh;
 
+  vertical-align: top;
   display: flex;
   justify-content: center;
 
