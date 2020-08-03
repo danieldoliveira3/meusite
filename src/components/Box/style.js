@@ -61,7 +61,9 @@ export const RedesSociais = styled.div`
       margin-right: 0;
     }
   }
+`;
 
+export const OcultarRedes = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     display: none;
   }

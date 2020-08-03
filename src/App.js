@@ -20,22 +20,24 @@ export default function App() {
           </s.Text>
         </s.Box>
 
-        <s.RedesSociais>
-          <a
-            href="https://github.com/danieldoliveira3"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i as="a" className="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/_danieldoliveira/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i as="a" className="fab fa-instagram"></i>
-          </a>
-        </s.RedesSociais>
+        <s.OcultarRedes>
+          <s.RedesSociais>
+            <a
+              href="https://github.com/danieldoliveira3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i as="a" className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_danieldoliveira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i as="a" className="fab fa-instagram"></i>
+            </a>
+          </s.RedesSociais>
+        </s.OcultarRedes>
       </s.wrapPerfil>
       <BoxInfo id="projects" maxWidth="660px" title="MEUS PROJETOS">
         {ar.map((i) => {
