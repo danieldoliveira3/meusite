@@ -30,7 +30,7 @@ export const MenuPreto = styled.div`
   top: 0;
   left: 0;
   z-index: 100;
-  background: black;
+  background: #282a36;
 `;
 
 export const MenuTransparent = styled.div`
