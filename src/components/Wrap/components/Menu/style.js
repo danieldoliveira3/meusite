@@ -18,7 +18,7 @@ export const Menu = styled.div`
 
 export const MenuPreto = styled.div`
   width: 50%;
-  height: calc((1vh * 100) - 50px);
+  height: ${(props) => props.height};
 
   vertical-align: middle;
   display: flex;
@@ -33,7 +33,7 @@ export const MenuPreto = styled.div`
 
 export const MenuTransparent = styled.div`
   width: 50%;
-  height: calc((1vh * 100) - 50px);
+  height: ${(props) => props.height};
 
   position: fixed;
   top: 0;
@@ -50,7 +50,7 @@ export const MenuLinks = styled.div`
   padding: 20px;
 
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
 
   i {
     color: #fff;
@@ -81,4 +81,10 @@ export const MenuText = styled.li`
   padding: 10px;
   font-family: "Roboto" sans-serif !important;
   margin-top: 10px;
+`;
+
+export const Icone = styled.div`
+  position: absolute;
+  top: -10px;
+  left: 60px;
 `;

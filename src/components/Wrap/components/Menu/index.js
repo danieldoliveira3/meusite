@@ -1,31 +1,63 @@
 import React, { Component } from "react";
 import * as s from "./style";
+import * as rede from "../../../Box/style";
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = { show: false };
   }
 
+  getInitialState = () => {
+    return { windowWidth: window.innerWidth };
+  };
+
+  handleResize = (e) => {
+    this.setState({ windowWidth: window.innerWidth });
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillMount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
   showMenu = () => {
     this.setState((state) => ({ show: !state.show }));
-    console.log(this.state.show);
   };
+
   render() {
     const { show } = this.state;
+    const height = window.innerHeight.toString();
+
     return (
       <>
         {show ? (
           <>
-            <s.MenuPreto>
+            <s.MenuPreto height={height + "px"}>
               <s.MenuLinks>
-                <i onClick={this.showMenu} className="fas fa-times"></i>
+                <s.Icone>
+                  <i onClick={this.showMenu} className="fas fa-times"></i>
+                </s.Icone>
                 <ul>
                   <s.MenuText>SOBRE MIM</s.MenuText>
                   <s.MenuText>MEUS PROJETOS</s.MenuText>
                 </ul>
+                <rede.RedesSociais>
+                  <a href="/" target="_blank">
+                    <i as="a" className="fab fa-github"></i>
+                  </a>
+                  <a href="/" target="_blank">
+                    <i as="a" className="fab fa-instagram"></i>
+                  </a>
+                </rede.RedesSociais>
               </s.MenuLinks>
             </s.MenuPreto>
-            <s.MenuTransparent onClick={this.showMenu}></s.MenuTransparent>
+            <s.MenuTransparent
+              height={height + "px"}
+              onClick={this.showMenu}
+            ></s.MenuTransparent>
           </>
         ) : (
           <s.Menu onClick={this.showMenu}>
