@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const wrapPerfil = styled.div`
   width: 300px;
   height: 500px;
+
   @media (min-width: 320px) and (max-width: 480px) {
     width: 90%;
+    margin-top: -80px;
   }
   display: flex;
   flex-direction: column;
