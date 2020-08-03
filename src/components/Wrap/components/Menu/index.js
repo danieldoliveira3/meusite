@@ -15,7 +15,20 @@ class Menu extends Component {
     return (
       <>
         {show ? (
-          <s.MenuPreto>MENU PRETO</s.MenuPreto>
+          <>
+            <s.MenuPreto>
+              <s.MenuLinks>
+                <i onClick={this.showMenu} className="fas fa-times"></i>
+                <ul>
+                  <s.MenuText>SOBRE MIM</s.MenuText>
+                  <s.MenuText>MEUS PROJETOS</s.MenuText>
+                </ul>
+              </s.MenuLinks>
+            </s.MenuPreto>
+            <s.MenuTransparent onClick={this.showMenu}>
+              Menu trans
+            </s.MenuTransparent>
+          </>
         ) : (
           <s.Menu onClick={this.showMenu}>
             <i className="fas fa-bars"></i>
