@@ -25,9 +25,7 @@ class Menu extends Component {
                 </ul>
               </s.MenuLinks>
             </s.MenuPreto>
-            <s.MenuTransparent onClick={this.showMenu}>
-              Menu trans
-            </s.MenuTransparent>
+            <s.MenuTransparent onClick={this.showMenu}>]</s.MenuTransparent>
           </>
         ) : (
           <s.Menu onClick={this.showMenu}>
