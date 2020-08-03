@@ -17,6 +17,11 @@ export default function App() {
           <s.Text>
             Oi, me chamo Daniel e estudo Sistemas de Informação no CIN. Eu gosto
             muito de FrontEnd, UI e UX e pretendo me aprofundar nessa área.
+            <br />
+            <br />
+            <s.ItalicText>
+              Esse site foi testado e aprovado pela minha priminha de 7 anos.
+            </s.ItalicText>
           </s.Text>
         </s.Box>
 

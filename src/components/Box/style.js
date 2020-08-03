@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const wrapPerfil = styled.div`
   width: 300px;
-  height: 500px;
+  height: auto;
 
   @media (min-width: 320px) and (max-width: 480px) {
     width: 100%;
@@ -75,5 +75,9 @@ export const Text = styled.p`
   font-size: 14px;
   color: #fff;
   line-height: 20px;
-  text-align: justify;
+  text-align: center;
+`;
+export const ItalicText = styled.div`
+  text-align: center !important;
+  font-size: 12px;
 `;
