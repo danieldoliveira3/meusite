@@ -6,7 +6,8 @@ export const wrapPerfil = styled.div`
 
   @media (min-width: 320px) and (max-width: 480px) {
     width: 100%;
-    margin-top: -80px;
+    margin-top: 0px;
+    margin-bottom: 120px;
   }
   display: flex;
   flex-direction: column;
@@ -21,6 +22,8 @@ export const fotoPerfil = styled.div`
   position: relative;
   display: block;
 
+  border: 2px solid f2709c;
+  box-shadow: 0 3px 3px -5px #f2709c, 2px 2px 5px #f2709c;
   background: ${(props) => `url(${props.fotoPerfil})`};
   background-size: 200px 200px;
 

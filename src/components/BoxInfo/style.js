@@ -37,6 +37,7 @@ export const TitleBoxInfo = styled.div`
 
 export const BodyBoxInfo = styled.div`
   position: relative;
+  z-index: 0;
 
   display: inline-flex;
   flex-wrap: wrap;
@@ -75,6 +76,7 @@ export const BodyBoxInfo = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 
     &:first-child {
       margin-right: 0;

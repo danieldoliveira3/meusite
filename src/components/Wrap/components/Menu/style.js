@@ -6,6 +6,8 @@ export const Menu = styled.div`
   left: 20px;
   display: none;
 
+  z-index: 1000;
+
   i {
     color: #fff;
     font-size: 24px;
