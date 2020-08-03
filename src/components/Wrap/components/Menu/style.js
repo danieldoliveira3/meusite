@@ -13,6 +13,8 @@ export const Menu = styled.div`
 
   @media (min-width: 320px) and (max-width: 480px) {
     display: block;
+
+    position: fixed;
   }
 `;
 

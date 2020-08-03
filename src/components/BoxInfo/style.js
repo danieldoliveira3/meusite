@@ -33,12 +33,12 @@ export const BodyBoxInfo = styled.div`
   justify-content: start;
   align-items: center;
 
-  max-width: 660px;
+  max-width: 300px;
 
   max-height: 400px;
   /* nem lembro mais qual problema to tentando resolver */
   padding: 30px;
-  padding-left: 60px;
+  padding-left: 30px;
   padding-top: 30px;
 
   background: rgba(255, 255, 255, 0.2);

@@ -5,7 +5,7 @@ import * as s from "./components/Box/style";
 import ItemBoxInfo from "./components/BoxInfo/components/ItemBoxInfo";
 import image from "./assets/images/exemplo.jpg";
 import fotoPerfil from "./assets/images/perfil.jpg";
-
+import ProgressBar from "./components/ProgressBar";
 export default function App() {
   const ar = ["PROPES", "COGNITA", "BANANA"];
   return (
@@ -39,7 +39,15 @@ export default function App() {
           </s.RedesSociais>
         </s.OcultarRedes>
       </s.wrapPerfil>
-      <BoxInfo id="projects" maxWidth="660px" title="MEUS PROJETOS">
+      <BoxInfo id="habilities" title="MINHAS HABILIDADES">
+        <ProgressBar done="80" />
+        <ProgressBar done="80" />
+        <ProgressBar done="80" />
+        <ProgressBar done="80" />
+        <ProgressBar done="80" />
+      </BoxInfo>
+
+      <BoxInfo id="projects" title="MEUS PROJETOS">
         {ar.map((i) => {
           return (
             <ItemBoxInfo
