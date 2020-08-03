@@ -38,6 +38,7 @@ export const Box = styled.div`
 
   @media (min-width: 320px) and (max-width: 480px) {
     width: 100%;
+    margin-bottom: -90px;
   }
 `;
 
@@ -59,6 +60,10 @@ export const RedesSociais = styled.div`
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
   }
 `;
 

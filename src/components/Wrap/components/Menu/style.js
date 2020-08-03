@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as rede from "../../../Box/style";
 
 export const Menu = styled.div`
   position: absolute;
@@ -87,4 +88,10 @@ export const Icone = styled.div`
   position: absolute;
   top: -10px;
   left: 60px;
+`;
+
+export const RedesSociais = styled(rede.RedesSociais)`
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: block;
+  }
 `;
