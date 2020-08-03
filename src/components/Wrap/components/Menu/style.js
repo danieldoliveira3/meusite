@@ -33,7 +33,7 @@ export const MenuPreto = styled.div`
 
 export const MenuTransparent = styled.div`
   width: 50%;
-  height: 100vh;
+  height: calc((1vh * 100) - 30px);
 
   position: fixed;
   top: 0;
