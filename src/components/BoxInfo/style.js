@@ -43,13 +43,14 @@ export const BodyBoxInfo = styled.div`
   justify-content: start;
   align-items: center;
 
-  max-width: 300px;
+  width: 300px;
 
   max-height: 400px;
   /* nem lembro mais qual problema to tentando resolver */
   padding: 30px;
   padding-left: 30px;
   padding-top: 30px;
+  padding-bottom: 30px;
 
   background: #282a36;
   border-radius: 15px;
@@ -70,7 +71,7 @@ export const BodyBoxInfo = styled.div`
     padding-left: 30px;
 
     max-height: 500px;
-
+    width: 100%;
     justify-content: center;
   }
 `;
