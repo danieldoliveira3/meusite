@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TitleBoxInfo from "../../styles.js";
+import TitleBoxInfo from "../../style.js";
 
 export const TitleItemBox = styled(TitleBoxInfo)`
   font-size: 18px;
@@ -7,6 +7,10 @@ export const TitleItemBox = styled(TitleBoxInfo)`
   overflow: hidden;
   width: 200px;
   left: 0;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 export const ItemBoxInfo = styled.div`
@@ -14,6 +18,7 @@ export const ItemBoxInfo = styled.div`
   width: 250px;
   height: 140px;
 
+  z-index: 0;
   position: relative;
 
   background: ${(props) => `url(${props.bg})`};

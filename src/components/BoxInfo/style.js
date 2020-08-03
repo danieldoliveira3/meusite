@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const wrapBoxInfo = styled.div`
   position: relative;
   padding: 20px;
-  top: 20px;
+  z-index: 0;
 `;
 
 export const TitleBoxInfo = styled.div`
   position: absolute;
   top: -10px;
   left: 20px;
+  z-index: 1;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;

@@ -1,0 +1,29 @@
+import React, { Component } from "react";
+import * as s from "./style";
+class Menu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { show: false };
+  }
+
+  showMenu = () => {
+    this.setState((state) => ({ show: !state.show }));
+    console.log(this.state.show);
+  };
+  render() {
+    const { show } = this.state;
+    return (
+      <>
+        {show ? (
+          <s.MenuPreto>MENU PRETO</s.MenuPreto>
+        ) : (
+          <s.Menu onClick={this.showMenu}>
+            <i className="fas fa-bars"></i>
+          </s.Menu>
+        )}
+      </>
+    );
+  }
+}
+
+export default Menu;

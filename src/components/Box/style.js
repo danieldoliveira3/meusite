@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const wrapPerfil = styled.div`
   width: 300px;
   height: 500px;
-
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 90%;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,11 +29,16 @@ export const fotoPerfil = styled.div`
 export const Box = styled.div`
   background: red;
   width: 200px;
+
   height: ${(props) => (props.height ? props.height : "auto")};
   padding: 20px;
 
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const RedesSociais = styled.div`
