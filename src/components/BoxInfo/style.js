@@ -2,13 +2,23 @@ import styled from "styled-components";
 
 export const wrapBoxInfo = styled.div`
   position: relative;
-  padding: 20px;
+
   z-index: 0;
+  margin-right: 30px;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-right: 0;
+    margin-top: 20px;
+
+    &:last-child {
+      margin-top: 60px;
+    }
+  }
 `;
 
 export const TitleBoxInfo = styled.div`
   position: absolute;
-  top: -10px;
+  top: -15px;
   left: 20px;
   z-index: 1;
 
@@ -41,10 +51,14 @@ export const BodyBoxInfo = styled.div`
   padding-left: 30px;
   padding-top: 30px;
 
-  background: rgba(255, 255, 255, 0.2);
+  background: #282a36;
   border-radius: 15px;
 
   overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)

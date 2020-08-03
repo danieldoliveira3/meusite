@@ -10,7 +10,7 @@ export const Wrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 30px;
   background: ${(props) => `url(${props.bg})`};
 
   @media (min-width: 320px) and (max-width: 480px) {

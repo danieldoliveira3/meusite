@@ -1,6 +1,7 @@
 import React from "react";
 import * as s from "./style";
-const Progress = ({ done }) => {
+
+const Progress = ({ done, titulo }) => {
   const [style, setStyle] = React.useState({});
 
   setTimeout(() => {
@@ -13,9 +14,13 @@ const Progress = ({ done }) => {
   }, 200);
 
   return (
-    <s.Progress>
-      <s.ProgressDone style={style}>{done}%</s.ProgressDone>
-    </s.Progress>
+    <>
+      <s.TitleProgressBar>{titulo}</s.TitleProgressBar>
+
+      <s.Progress>
+        <s.ProgressDone style={style}>{done}%</s.ProgressDone>
+      </s.Progress>
+    </>
   );
 };
 

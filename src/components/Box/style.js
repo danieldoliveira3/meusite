@@ -5,7 +5,7 @@ export const wrapPerfil = styled.div`
   height: 500px;
 
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 90%;
+    width: 100%;
     margin-top: -80px;
   }
   display: flex;
@@ -29,13 +29,12 @@ export const fotoPerfil = styled.div`
 `;
 
 export const Box = styled.div`
-  background: red;
   width: 200px;
 
   height: ${(props) => (props.height ? props.height : "auto")};
   padding: 20px;
 
-  background: rgba(255, 255, 255, 0.2);
+  background: #282a36;
   border-radius: 15px;
 
   @media (min-width: 320px) and (max-width: 480px) {

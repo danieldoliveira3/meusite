@@ -14,7 +14,10 @@ export const TitleItemBox = styled(TitleBoxInfo)`
 `;
 
 export const ItemBoxInfo = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
+  &:first-child {
+    margin-top: 60px;
+  }
   width: 250px;
   height: 140px;
 

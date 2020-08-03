@@ -39,15 +39,16 @@ export default function App() {
           </s.RedesSociais>
         </s.OcultarRedes>
       </s.wrapPerfil>
-      <BoxInfo id="habilities" title="MINHAS HABILIDADES">
-        <ProgressBar done="80" />
-        <ProgressBar done="80" />
-        <ProgressBar done="80" />
-        <ProgressBar done="80" />
-        <ProgressBar done="80" />
+      <BoxInfo id="habilities" title="HABILIDADES">
+        <ProgressBar titulo="REACT" done="70" />
+        <ProgressBar titulo="JAVASCRIPT" done="80" />
+        <ProgressBar titulo="HTML" done="80" />
+        <ProgressBar titulo="CSS" done="80" />
+        <ProgressBar titulo="PYTHON" done="80" />
+        <ProgressBar titulo="DJANGO" done="80" />
       </BoxInfo>
 
-      <BoxInfo id="projects" title="MEUS PROJETOS">
+      <BoxInfo id="projects" title="PROJETOS">
         {ar.map((i) => {
           return (
             <ItemBoxInfo
