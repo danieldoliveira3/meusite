@@ -20,7 +20,7 @@ export const wrapBoxInfo = styled.div`
 
 export const TitleBoxInfo = styled.div`
   position: absolute;
-  top: -15px;
+  top: -35px;
   left: 20px;
   z-index: 1;
 

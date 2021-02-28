@@ -42,7 +42,7 @@ class Menu extends Component {
                 </s.Icone>
                 <ul>
                   <s.MenuText>SOBRE MIM</s.MenuText>
-                  <s.MenuText>MEUS PROJETOS</s.MenuText>
+                  <s.MenuText as="a" >MEUS PROJETOS</s.MenuText>
                 </ul>
                 <rede.RedesSociais>
                   <a
@@ -68,10 +68,10 @@ class Menu extends Component {
             ></s.MenuTransparent>
           </>
         ) : (
-          <s.Menu onClick={this.showMenu}>
-            <i className="fas fa-bars"></i>
-          </s.Menu>
-        )}
+            <s.Menu onClick={this.showMenu}>
+              <i className="fas fa-bars"></i>
+            </s.Menu>
+          )}
       </>
     );
   }

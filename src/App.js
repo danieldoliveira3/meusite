@@ -46,11 +46,12 @@ export default function App() {
       </s.wrapPerfil>
       <BoxInfo id="habilities" title="HABILIDADES">
         <ProgressBar titulo="REACT" done="70" />
+        <ProgressBar titulo="RUBY ON RAILS" done="80" />
         <ProgressBar titulo="JAVASCRIPT" done="80" />
         <ProgressBar titulo="HTML" done="80" />
         <ProgressBar titulo="CSS" done="80" />
-        <ProgressBar titulo="PYTHON" done="80" />
-        <ProgressBar titulo="DJANGO" done="80" />
+        <ProgressBar titulo="PYTHON" done="70" />
+        <ProgressBar titulo="DJANGO" done="50" />
       </BoxInfo>
 
       <BoxInfo id="projects" title="PROJETOS">
