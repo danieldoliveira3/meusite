@@ -60,7 +60,7 @@ export default function App() {
         <ItemBoxInfo
           key={Math.random() * 100}
           bg={preview3}
-          title="COGNITA"
+          title="ANALYTICS UAB"
           buttonText="VER MAIS"
           buttonURL="https://v-lab-ufpe.medium.com/analyticsuab-bbb3945abcc4"
         />
