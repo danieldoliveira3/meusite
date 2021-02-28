@@ -3,11 +3,13 @@ import Wrap from "./components/Wrap";
 import BoxInfo from "./components/BoxInfo";
 import * as s from "./components/Box/style";
 import ItemBoxInfo from "./components/BoxInfo/components/ItemBoxInfo";
-import image from "./assets/images/exemplo.jpg";
+import preview1 from "./assets/images/preview1.png";
+import preview2 from "./assets/images/preview2.png";
+import preview3 from "./assets/images/preview3.png";
 import fotoPerfil from "./assets/images/perfil.jpg";
 import ProgressBar from "./components/ProgressBar";
 export default function App() {
-  const ar = ["PROPES", "COGNITA", "BANANA"];
+  // const ar = ["PROPES", "COGNITA", "BANANA"];
   return (
     <Wrap>
       <s.wrapPerfil id="home">
@@ -55,17 +57,29 @@ export default function App() {
       </BoxInfo>
 
       <BoxInfo id="projects" title="PROJETOS">
-        {ar.map((i) => {
-          return (
-            <ItemBoxInfo
-              key={i.toString()}
-              bg={image}
-              title={i.toUpperCase()}
-              buttonText="VER MAIS"
-              buttonURL="https://google.com"
-            />
-          );
-        })}
+        <ItemBoxInfo
+          key={Math.random() * 100}
+          bg={preview3}
+          title="COGNITA"
+          buttonText="VER MAIS"
+          buttonURL="https://v-lab-ufpe.medium.com/analyticsuab-bbb3945abcc4"
+        />
+        <ItemBoxInfo
+          key={Math.random() * 100}
+          bg={preview1}
+          title="FINANTH"
+          buttonText="VER MAIS"
+          buttonURL="https://finanth.vercel.app/"
+        />
+        <ItemBoxInfo
+          key={Math.random() * 100}
+          bg={preview2}
+          title="COGNITA"
+          buttonText="VER MAIS"
+          buttonURL="https://cognitadesenvolvimento.com.br/"
+        />
+
+
       </BoxInfo>
     </Wrap>
   );

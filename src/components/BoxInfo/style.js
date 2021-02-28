@@ -49,10 +49,12 @@ export const BodyBoxInfo = styled.div`
   width: 300px;
 
   max-height: 400px;
+  min-height: 400px; 
+
   /* nem lembro mais qual problema to tentando resolver */
   padding: 30px;
   padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 30px;
 
   background: #282a36;
