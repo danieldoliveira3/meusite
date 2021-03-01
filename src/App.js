@@ -6,6 +6,8 @@ import ItemBoxInfo from "./components/BoxInfo/components/ItemBoxInfo";
 import preview1 from "./assets/images/preview1.png";
 import preview2 from "./assets/images/preview2.png";
 import preview3 from "./assets/images/preview3.png";
+import preview4 from "./assets/images/preview4.png";
+import preview5 from "./assets/images/preview5.png";
 import fotoPerfil from "./assets/images/perfil.jpg";
 import ProgressBar from "./components/ProgressBar";
 export default function App() {
@@ -64,12 +66,30 @@ export default function App() {
           buttonText="VER MAIS"
           buttonURL="https://v-lab-ufpe.medium.com/analyticsuab-bbb3945abcc4"
         />
+
         <ItemBoxInfo
           key={Math.random() * 100}
           bg={preview1}
           title="FINANTH"
           buttonText="VER MAIS"
           buttonURL="https://finanth.vercel.app/"
+        />
+
+        <ItemBoxInfo
+          key={Math.random() * 100}
+          bg={preview5}
+          title="COMBINA NOME"
+          buttonText="VER MAIS"
+          buttonURL="https://combina-nome.herokuapp.com/"
+        />
+
+
+        <ItemBoxInfo
+          key={Math.random() * 100}
+          bg={preview4}
+          title="NATAL KATY PERRY"
+          buttonText="VER MAIS"
+          buttonURL="https://katyperry.me"
         />
         <ItemBoxInfo
           key={Math.random() * 100}
