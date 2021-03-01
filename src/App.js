@@ -73,7 +73,7 @@ export default function App() {
           title="FINANTH"
           buttonText="VER MAIS"
           buttonURL="https://finanth.vercel.app/"
-        />
+        />e
 
         <ItemBoxInfo
           key={Math.random() * 100}
@@ -91,13 +91,13 @@ export default function App() {
           buttonText="VER MAIS"
           buttonURL="https://katyperry.me"
         />
-        <ItemBoxInfo
+        {/* <ItemBoxInfo
           key={Math.random() * 100}
           bg={preview2}
           title="COGNITA"
           buttonText="VER MAIS"
           buttonURL="https://cognitadesenvolvimento.com.br/"
-        />
+        /> */}
 
 
       </BoxInfo>
