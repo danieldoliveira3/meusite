@@ -73,7 +73,7 @@ export default function App() {
           title="FINANTH"
           buttonText="VER MAIS"
           buttonURL="https://finanth.vercel.app/"
-        />e
+        />
 
         <ItemBoxInfo
           key={Math.random() * 100}
