@@ -32,7 +32,7 @@ export default function App() {
         <s.OcultarRedes>
           <s.RedesSociais>
             <a
-              href="https://github.com/danieldoliveira3"
+              href="https://github.com/ddevdan"
               target="_blank"
               rel="noopener noreferrer"
             >
