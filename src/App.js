@@ -49,11 +49,12 @@ export default function App() {
         </s.OcultarRedes>
       </s.wrapPerfil>
       <BoxInfo id="habilities" title="HABILIDADES">
-        <ProgressBar titulo="REACT" done="70" />
+        <ProgressBar titulo="REACT" done="80" />
         <ProgressBar titulo="RUBY ON RAILS" done="80" />
         <ProgressBar titulo="JAVASCRIPT" done="80" />
-        <ProgressBar titulo="HTML" done="80" />
-        <ProgressBar titulo="CSS" done="80" />
+        <ProgressBar titulo="DOCKER" done="70" />
+        <ProgressBar titulo="HTML" done="90" />
+        <ProgressBar titulo="CSS" done="90" />
         <ProgressBar titulo="PYTHON" done="70" />
         <ProgressBar titulo="DJANGO" done="50" />
       </BoxInfo>
